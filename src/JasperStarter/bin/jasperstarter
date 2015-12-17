@@ -23,4 +23,8 @@ else
 fi
 
 #SCRIPTPATH="$(dirname $0)"
+
+# @src-fix for local environment
+# Hat Tip: https://community.bitnami.com/t/dyld-symbol-not-found---cg-jpeg-resync-to-restart-on-script-execution/24225/2
+#          https://wiki.bitnami.com/Components/BitNami_console#How_to_run_a_system_command_without_the_stack_environment.3f
 env -i java -jar "$HOME_FOLDER/lib/jasperstarter.jar" "$@"
